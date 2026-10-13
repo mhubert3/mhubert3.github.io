@@ -11,9 +11,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
     <div class="py-6 space-y-4">
       <p class="text-lg">
-        Welcome to my personal website and digital portfolio! I'm currently a
-        junior year student at Johns Hopkins University studying Computer
-        Engineering.
+        Welcome to my personal website and digital portfolio! I'm a senior at
+        Johns Hopkins University studying Computer Engineering (graduating May
+        2027), focused on RTL design, design verification, and FPGA/ASIC
+        engineering.
       </p>
 
       <div class="flex justify-start mb-4">
@@ -49,13 +50,12 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         <h3 class="text-xl font-semibold">Academic Focus 📚</h3>
         <p class="text-lg">My major-relevant interests include:</p>
         <ul class="list-disc list-inside ml-4 text-lg">
+          <li>RTL Design &amp; Design Verification</li>
           <li>Computer Architecture</li>
-          <li>ASIC Engineering</li>
-          <li>FPGA Engineering</li>
-          <li>High-Level Synthesis</li>
-          <li>Agile Hardware Generation</li>
-          <li>Agentic AI for hardware</li>
-          <li>Computational Genomics</li>
+          <li>FPGA Prototyping &amp; Hardware Bring-Up</li>
+          <li>ASIC Design Flow</li>
+          <li>Hardware for AI Acceleration</li>
+          <li>The Semiconductor Industry &amp; Supply Chain</li>
         </ul>
       </div>
 
@@ -104,7 +104,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
           title="Key/Value Store (C++)"
           img="/software.webp"
           desc="Built a Redis-like in-memory K/V store with custom message serialization, multithreaded server (auto-commit & transactions with table-level locking), client utilities, and unit tests."
-          url="#"
+          url="https://github.com/mhubert3/KeyValue-Store"
         />
       </div>
 
@@ -112,8 +112,8 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         <HorizontalCard
           title="Cache Simulator (C, C++)"
           img="/software.webp"
-          desc="Simulated a configurable set-associative cache (size, block, LRU/FIFO, write policies) that outputs hit/miss, cycle counts from benchmark traces."
-          url="#"
+          desc="Simulated a configurable set-associative cache (sets, blocks, block size, LRU/FIFO replacement, write policies) that reports hit/miss counts and cycle totals from memory traces, used to compare associativity and policy trade-offs."
+          url="https://github.com/mhubert3/Cache-Simulator"
         />
       </div>
     </div>
@@ -124,31 +124,33 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
       <div class="mb-6">
         <HorizontalCard
-          title="Serial UART Communication Interface (VHDL)"
+          title="ZipCPU Soft-Core Processor Build (Verilog)"
+          img="/hardware.webp"
+          desc="Working through the ZipCPU tutorial curriculum toward building a 32-bit pipelined RISC soft-core processor on an Artix-7 FPGA. Simulating each design with Verilator and C++ test drivers, then validating it on hardware."
+          url="#"
+          target="_self"
+          badge="In Progress"
+        />
+      </div>
+
+      <div class="mb-6">
+        <HorizontalCard
+          title="UART Transceiver (VHDL)"
           img="/uart-thumbnail.webp"
-          desc="Implemented RS-232 serial transceiver with configurable baud rate for asynchronous bidirectional communication. Interfaced with FTDI USB-UART bridge and verified timing/protocol compliance on hardware."
+          desc="Designed a UART transmitter and receiver (8N1, 115,200 baud from a 12 MHz clock) with FSM control, a two-flop RX synchronizer, and mid-bit sampling. Verified with a self-checking testbench, then on hardware via loopback."
           url="/blog/synthesizable-rs-232-uart-transceiver-in-vhdl"
         />
       </div>
 
       <div class="mb-6">
         <HorizontalCard
-          title="IPC Serial Communication Interface (VHDL)"
+          title="I²C Master Controller (VHDL)"
           img="/i2c-thumbnail.webp"
-          desc="Implemented an I²C master with start/stop conditions, ACK/NACK handling, and open-drain SDA/SCL signaling. Tested data transfer with a PIC microcontroller and debugged timing behavior."
+          desc="Designed an FSM-based I²C master with repeated start, ACK/NACK, clock stretching, and open-drain SDA/SCL via Xilinx IOBUF primitives. Validated end-to-end on hardware with a PIC16F18326 slave."
           url="/blog/i2c-master-controller-in-vhdl"
         />
       </div>
 
-      <div class="mb-6">
-        <HorizontalCard
-          title="Streaming Genomic Data Reduction Pipeline (SystemVerilog)"
-          img="/hardware.webp"
-          desc="A hardware data-reduction pipeline inspired by real genomics workflows to clean and compress data suitable for downstream analysis."
-          url="#"
-          badge="Coming Soon"
-        />
-      </div>
     </div>
   </div>
 </BaseLayout>
