@@ -11,6 +11,10 @@ export default defineConfig({
   base: '/',
   trailingSlash: 'ignore',
   integrations: [mdx(), sitemap(), tailwind()],
+  redirects: {
+    // UART post was renamed; keep old links (LinkedIn, shared URLs) working
+    '/blog/synthesizable-rs-232-uart-transceiver-in-vhdl': '/blog/synthesizable-uart-transceiver-in-vhdl',
+  },
   image: {
     service: passthroughImageService(),
   }
