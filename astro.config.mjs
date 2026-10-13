@@ -12,6 +12,8 @@ export default defineConfig({
   trailingSlash: 'ignore',
   integrations: [mdx(), sitemap(), tailwind()],
   redirects: {
+    // The old Documentation listing moved to the Vlogs page
+    '/blog': '/vlogs',
     // UART post was renamed; keep old links (LinkedIn, shared URLs) working
     '/blog/synthesizable-rs-232-uart-transceiver-in-vhdl': '/blog/synthesizable-uart-transceiver-in-vhdl',
   },
