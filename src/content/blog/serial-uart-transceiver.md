@@ -1,5 +1,5 @@
 ---
-title: "Synthesizable RS-232 UART Transceiver in VHDL"
+title: "Synthesizable UART Transceiver in VHDL"
 description: "A custom hardware-level asynchronous serial communication module for the Digilent Cmod A7 FPGA."
 pubDate: "Mar 03 2026"
 heroImage: "/uart-thumbnail.webp"
@@ -8,10 +8,10 @@ tags: ["FPGA", "VHDL", "Digital Logic", "UART"]
 ---
 
 ## Introduction
-This project implements a synthesizable, bidirectional RS-232 Universal Asynchronous Receiver-Transmitter (UART) module in VHDL. It was designed to interface an FPGA with an external PIC microcontroller and a MATLAB-based software GUI, requiring precise handling of asynchronous clock domains and hardware-level state machines.
+This project implements a synthesizable, bidirectional Universal Asynchronous Receiver-Transmitter (UART) module in VHDL. It was designed to interface an FPGA with an external PIC microcontroller and a MATLAB-based software GUI, requiring precise handling of asynchronous clock domains and hardware-level state machines.
 
 ## Hardware & Constraints
-The target platform is the Digilent Cmod A7-35T FPGA board featuring a Xilinx Artix-7 chip. The system operates on a hardwired 12 MHz clock. To achieve the standard RS-232 baud rate of 115,200, the physical timing constraint requires exactly 104.167 clock cycles per bit (`12,000,000 / 115,200`). This mathematical constraint dictates the integer counter logic within the transmission and reception state machines.
+The target platform is the Digilent Cmod A7-35T FPGA board featuring a Xilinx Artix-7 chip. The system operates on a hardwired 12 MHz clock. To achieve the standard baud rate of 115,200, the physical timing constraint requires exactly 104.167 clock cycles per bit (`12,000,000 / 115,200`). This mathematical constraint dictates the integer counter logic within the transmission and reception state machines.
 
 
 ## System Architecture

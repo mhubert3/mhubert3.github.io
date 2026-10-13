@@ -9,11 +9,11 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-10 text-justify">
-    Computer Engineering major at Johns Hopkins University with experience in
-    data science, hardware design, low-level programming, and student
-    leadership. Current Data Science Researcher at the SNF Agora Institute and
-    Vice President of the JHU chapter of the National Society of Black
-    Engineers.
+    Computer Engineering senior at Johns Hopkins University (graduating May
+    2027) focused on RTL design, design verification, and FPGA/ASIC
+    engineering. Experience spans FPGA protocol design in VHDL, low-level
+    C/C++ systems work, and student leadership as Co-President of the JHU
+    chapter of the National Society of Black Engineers. U.S. Citizen.
   </div>
 
   <div class="bg-base-200 p-6 rounded-lg my-8">
@@ -43,11 +43,11 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       subtitle="Expected May 2027 at Johns Hopkins University, Baltimore, USA"
     >
       <div class="flex flex-wrap gap-2 mt-2">
-        <span class="badge badge-outline">Data Structures</span>
-        <span class="badge badge-outline">Computer Fundamentals</span>
-        <span class="badge badge-outline">Signals & Systems</span>
         <span class="badge badge-outline">FPGA Lab</span>
+        <span class="badge badge-outline">Computer System Fundamentals</span>
+        <span class="badge badge-outline">Signals & Systems</span>
         <span class="badge badge-outline">Mastering Electronics</span>
+        <span class="badge badge-outline">Data Structures</span>
       </div>
     </TimeLineElement>
     <TimeLineElement
@@ -66,40 +66,72 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Data Science Researcher at #iVoted Impact Concerts, SNF Agora Institute"
-      subtitle="May 2025 to Present"
+      title="Software Engineering Intern (Edge Software Optimization) at Morgate Solutions"
+      subtitle="Jun 2026 to Aug 2026"
     >
-      • Process music-listener and voter-demographic data from
-      RedistrictingDataHub & Geocorr APIs<br />
-      • Automate weekly ETL workflows with Python and the Google Sheets API<br
-      />
-      • Maintain dashboards that project concert-driven voter registrations
+      • Containerized C/C++ parsers with Docker for Linux edge gateways,
+      optimizing memory use to fit 512 MB device limits<br />
+      • Emulated network jitter and profiled CPU usage to find and prevent
+      buffer overflows in high-frequency data streams
     </TimeLineElement>
     <TimeLineElement
-      title="Vice President (Finance Chair '23-'25) at National Society of Black Engineers, JHU Chapter"
-      subtitle="Sep 2023 to Present"
+      title="Data Science Researcher at #iVoted Impact Concerts, SNF Agora Institute"
+      subtitle="May 2025 to May 2026"
     >
-      • Oversee a $9k annual budget and handle financial planning<br />
-      • Lead fundraising and sponsorship efforts generating $3.5k+<br />
-      • Develop marketing materials to boost member engagement
+      • Processed music-listener and voter-demographic data from
+      RedistrictingDataHub & Geocorr APIs<br />
+      • Automated weekly ETL workflows with Python and the Google Sheets API<br
+      />
+      • Maintained dashboards that projected concert-driven voter registrations
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Engineering Intern (Low-Level Data & Protocol Bridging) at Morgate Solutions"
+      subtitle="Jun 2024 to Aug 2024"
+    >
+      • Developed C extraction tools using struct packing and bitwise
+      operations to decode 50+ GB of binary telemetry<br />
+      • Managed struct byte alignment and endianness; built a Python test
+      harness to validate parser output
     </TimeLineElement>
     <TimeLineElement
       title="Robotics Designer at VEX Robotics"
-      subtitle="Nov 2019 to Mar 2022"
+      subtitle="Nov 2019 to Mar 2023"
     >
-      • Design & program competition robots in C++ / Python<br />
-      • Integrate sensors, tune motor controllers, and produce CAD for 3-D-printed
-      parts<br />
-      • Diagnose mechanical/electrical issues and iterated designs
+      • Designed & programmed competition robots in C++ / Python<br />
+      • Integrated sensors, tuned motor controllers, and produced CAD for
+      3-D-printed parts<br />
+      • Diagnosed mechanical/electrical issues and iterated designs
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Leadership</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Co-President at National Society of Black Engineers, JHU Chapter"
+      subtitle="Sep 2023 to Present (previously Vice President and Finance Chair)"
+    >
+      • Secured sponsorships from Medtronic, Visa, and Jane Street; hosted
+      events with Medtronic and Shift Alt Her<br />
+      • Expanded reach through events with JHU's Life Design Lab and Pava
+      Center, collaborations with five student organizations including SHPE and
+      BMES, cross-department and Instagram outreach, and a new alumni LinkedIn
+      group<br />
+      • Delegate committee work, run fundraisers and logistics, and fund member
+      travel to regional and national conferences<br />
+      • As Finance Chair, managed a $9K annual budget and secured $3.5K through
+      fundraising and corporate sponsorships
     </TimeLineElement>
     <TimeLineElement
-      title="Intern Assistant at Kumon Institute of Education"
-      subtitle="Sep 2022 to Jun 2023"
-    >
-      • Provide individualized math & reading support to students<br />
-      • Help run center operations<br />
-      • Completed full Kumon program
-    </TimeLineElement>
+      title="Fundraising Chair at HopThon, JHU Dance Marathon"
+      subtitle="Fall 2025 to Spring 2026"
+    />
+    <TimeLineElement
+      title="Philanthropy Chair at Alpha Epsilon Pi"
+      subtitle="Spring 2025"
+    />
   </div>
 
   <div class="mb-5">
@@ -107,27 +139,30 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="flex flex-wrap gap-2 mx-6">
-    <span class="badge badge-outline">C/C++</span>
-    <span class="badge badge-outline">Python (NumPy, Matplotlib, Pandas)</span>
-    <span class="badge badge-outline">MATLAB</span>
     <span class="badge badge-outline">VHDL</span>
-    <span class="badge badge-outline">SystemVerilog (Learning)</span>
+    <span class="badge badge-outline">Verilog</span>
+    <span class="badge badge-outline">Verilator</span>
+    <span class="badge badge-outline">Xilinx Vivado</span>
+    <span class="badge badge-outline">Self-Checking Testbenches</span>
+    <span class="badge badge-outline">LTSpice</span>
+    <span class="badge badge-outline">C/C++</span>
+    <span class="badge badge-outline">Python (NumPy, Pandas, Matplotlib)</span>
+    <span class="badge badge-outline">MATLAB</span>
     <span class="badge badge-outline">Bash</span>
     <span class="badge badge-outline">Linux (Ubuntu)</span>
     <span class="badge badge-outline">Git</span>
-    <span class="badge badge-outline">Xilinx Vivado</span>
-    <span class="badge badge-outline">LTSpice</span>
     <span class="badge badge-outline">Docker</span>
-    <span class="badge badge-outline">Vercel</span>
-    <span class="badge badge-outline">Excel (VLOOKUP, Charts, Graphs)</span>
-    <span class="badge badge-outline">Microsoft Office</span>
+    <span class="badge badge-outline">SystemVerilog (Learning)</span>
+    <span class="badge badge-outline">SystemC (Learning)</span>
   </div>
 
   <div class="mt-8 bg-base-200 p-4 rounded-lg mx-6">
     <h4 class="text-xl font-bold mb-2">Foundational Concepts</h4>
     <p class="text-lg">
-      Familiarity with x86-64 Assembly, RTL Design, Digital Verification, and
-      Protocol Implementation.
+      FSM design, two-flop synchronizers for asynchronous inputs, UART and I²C
+      protocol implementation, open-drain I/O, cache and memory hierarchy,
+      binary data formats (struct packing, endianness), and basic x86-64
+      assembly.
     </p>
   </div>
 </BaseLayout>
