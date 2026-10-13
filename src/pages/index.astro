@@ -17,6 +17,15 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         engineering.
       </p>
 
+      <div class="bg-base-200 border-l-4 border-secondary w-full p-4 rounded-r-lg">
+        <p class="text-lg">
+          <span class="font-bold">Looking for:</span> full-time roles in RTL
+          design, design verification, FPGA, and embedded engineering, starting
+          after I graduate in May 2027. I'm open to relocating and to other
+          opportunities for hands-on hardware experience.
+        </p>
+      </div>
+
       <div class="flex justify-start mb-4">
         <a
           href={`${import.meta.env.BASE_URL}Morgan%20Huberty%20Resume.pdf`}
@@ -77,13 +86,6 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         </ul>
       </div>
 
-      <p class="text-lg">
-        This website serves as both a portfolio and a space to explore my
-        habits, interests, and self-development journey. Built with Astro and
-        TailwindCSS, it's designed to be functional and reflective of my
-        personal style.
-      </p>
-
       <p class="text-lg">Thanks for stopping by! 🎉</p>
     </div>
   </div>
@@ -95,30 +97,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-    <!-- Left Column: Software Systems -->
-    <div>
-      <h2 class="text-2xl font-bold mb-4">Software Systems</h2>
-
-      <div class="mb-6">
-        <HorizontalCard
-          title="Key/Value Store (C++)"
-          img="/software.webp"
-          desc="Built a Redis-like in-memory K/V store with custom message serialization, multithreaded server (auto-commit & transactions with table-level locking), client utilities, and unit tests."
-          url="https://github.com/mhubert3/KeyValue-Store"
-        />
-      </div>
-
-      <div class="mb-6">
-        <HorizontalCard
-          title="Cache Simulator (C, C++)"
-          img="/software.webp"
-          desc="Simulated a configurable set-associative cache (sets, blocks, block size, LRU/FIFO replacement, write policies) that reports hit/miss counts and cycle totals from memory traces, used to compare associativity and policy trade-offs."
-          url="https://github.com/mhubert3/Cache-Simulator"
-        />
-      </div>
-    </div>
-
-    <!-- Right Column: Hardware Design -->
+    <!-- Left Column: Hardware Design -->
     <div>
       <h2 class="text-2xl font-bold mb-4">Hardware Design</h2>
 
@@ -151,6 +130,29 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         />
       </div>
 
+    </div>
+
+    <!-- Right Column: Software Systems -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Software Systems</h2>
+
+      <div class="mb-6">
+        <HorizontalCard
+          title="Key/Value Store (C++)"
+          img="/software.webp"
+          desc="Built a Redis-like in-memory K/V store with custom message serialization, multithreaded server (auto-commit & transactions with table-level locking), client utilities, and unit tests."
+          url="https://github.com/mhubert3/KeyValue-Store"
+        />
+      </div>
+
+      <div class="mb-6">
+        <HorizontalCard
+          title="Cache Simulator (C, C++)"
+          img="/software.webp"
+          desc="Simulated a configurable set-associative cache (sets, blocks, block size, LRU/FIFO replacement, write policies) that reports hit/miss counts and cycle totals from memory traces, used to compare associativity and policy trade-offs."
+          url="https://github.com/mhubert3/Cache-Simulator"
+        />
+      </div>
     </div>
   </div>
 </BaseLayout>
